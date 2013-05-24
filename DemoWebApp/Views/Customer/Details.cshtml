@@ -1,0 +1,16 @@
+﻿@model DemoWebApp.Controllers.CustomerDisplayModel
+
+@{
+    ViewBag.Title = "Détail du Customer";
+    
+}
+
+<h2>@ViewBag.Title</h2>
+
+@Html.DisplayForModel()
+
+<h3>Adresses ??</h3>
+@Html.DisplayFor(m=> m.Addresses)
+
+
+@Html.ActionLink("Back to list", "Index") | @Html.ActionLink("Edit", "Edit", new {id = Model.Id})
